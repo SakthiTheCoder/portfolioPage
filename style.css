@@ -1,0 +1,51 @@
+h1 { 
+    color: #008080;
+    background-color: bisque;
+}
+
+body {
+    border: solid;
+}
+.header{
+    display:flex; 
+    justify-content: space-between;
+}
+.menu{
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sub{
+    background-color: lightslategray;
+    border:solid;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.header a{
+    margin-right: 20px;
+}
+a:link{
+color:pink;
+}
+a:visited{
+    color:black;
+}
+.sub p{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+}
+
+.sub:hover p{
+    opacity:1 ;
+
+}
+.sub:hover img{
+    opacity:0.33;
+}
